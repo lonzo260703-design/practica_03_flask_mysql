@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Alumno</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Captura de datos</h1>
+    <form action="/guardar" method="POST">
+        Nombre: <input type="text" name="nombre"><br>
+        Correo: <input type="email" name="correo"><br>
+        Teléfono: <input type="text" name="telefono"><br>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
